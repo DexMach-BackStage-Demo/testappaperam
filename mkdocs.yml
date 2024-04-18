@@ -1,0 +1,8 @@
+site_name: "test-app-aperam"
+site_description: 
+
+nav:
+- Introduction: index.md
+
+plugins:
+- techdocs-core

@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "test-app-aperam"
+  annotations:
+    github.com/project-slug: dexmach-backstage-demo/testappaperam
+    backstage.io/kubernetes-id: "test-app-aperam"
+    backstage.io/kubernetes-namespace: "test-app-aperam"
+    backstage.io/kubernetes-cluster: aks-pe-poc-01
+    backstage.io/techdocs-ref: dir:.
+    azure.com/tag-selector: backstage-entity-id/test-app-aperam
+  links:
+    - url: https://testappaperam
+      title: Website
+spec:
+  type: service
+  owner: group:cloud-native
+  lifecycle: experimental
+  dependsOn:
+    - Resource:acrdmbackstagepoc
+    - Resource:aks-pe-poc-01
+    - Resource:
